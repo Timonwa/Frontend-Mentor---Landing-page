@@ -1,0 +1,7 @@
+.attribution{
+    display: fixed;
+    bottom: 0;
+}
+body{
+    background: hsl(218, 28%, 13%);
+}
