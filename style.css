@@ -20,7 +20,7 @@ Primary
   box-sizing: border-box;
   /* border: dashed white 1px; */
 }
-section>div{
+section > div {
   padding: 40px 20px;
 }
 /* body */
@@ -49,8 +49,8 @@ a:active {
   flex-wrap: nowrap;
 }
 /* navigation bar */
-header{
-  background:  hsl(217, 28%, 15%); 
+header {
+  background: hsl(217, 28%, 15%);
 }
 header > nav {
   display: flex;
@@ -84,15 +84,15 @@ header .nav-links > a {
   padding: 0;
   position: relative;
 }
-.cta1>*{
-    z-index: 1;
+.cta1 > * {
+  z-index: 1;
 }
-.cta1-svg{
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-    height: 300px;
-    width: 100%;
+.cta1-svg {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  height: 300px;
+  width: 100%;
 }
 /* cta1 and cta2 images */
 .cta1 .gets-image > img,
@@ -108,7 +108,7 @@ header .nav-links > a {
 .cta1 .gets-description > h1 {
   margin: 15px 0;
 }
-/* cta1 button */
+/* cta1 and cta3 button */
 button,
 input {
   font-size: 16px;
@@ -172,8 +172,9 @@ h3 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 12px;
 }
 /* review quote */
 .user-reviews > img {
@@ -195,7 +196,7 @@ h3 {
 /* review body */
 .review-card p,
 .review-card div {
-  padding: 7px 0;
+  padding: 6px 0;
   text-align: start;
 }
 /* review user details */
@@ -206,17 +207,20 @@ h3 {
 }
 /* user photo */
 .user-image {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.user-name-position {
+  margin-left: 10px;
+}
 .user-name,
 .user-location {
-  line-height: 8px;
+  line-height: 5px;
 }
 .user-name {
   font-weight: 700;
@@ -224,21 +228,35 @@ h3 {
 
 /* cta3  */
 .cta3 {
-  padding: 40px 10px;
+  height: 200px;
 }
 /* cta3 container */
 .cta3 > div {
+  margin: 40px 15px;
+  position: absolute;
+  top: -170px;
+  left: 0;
   background-color: hsl(217, 28%, 15%);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 20px;
+  padding: 40px 20px;
+  text-align: center;
 }
+/* cta3 pbody */
 .cta3 p {
   padding: 10px 0;
 }
+/* cta3 input email and button */
+.cta3 .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* cta3 input email */
 .cta3 input {
   background-color: white;
   padding-left: 15px;
@@ -247,74 +265,98 @@ h3 {
   color: gray;
   font-weight: 100;
 }
-.cta3 input:invalid{
-    border: solid red 3px;
+/* cta3 input email invalid state */
+.cta3 input:invalid {
+  border: solid red 3px;
 }
 /* footer */
-footer{
-    background-color: hsl(216, 53%, 9%);
-    text-align: start;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
+footer {
+  background-color: hsl(216, 53%, 9%);
+  text-align: start;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 /* footer logo*/
-footer>div>img{
-    padding-left: 30px;
+footer > div > img {
+  padding-left: 30px;
 }
 
-.footer-contents{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    /* border: dashed 1px white; */
+.footer-contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* border: dashed 1px white; */
 }
-.footer-contents>div{
-    padding: 20px 10px;
+.footer-contents > div {
+  padding: 20px 10px;
 }
-    /* contacts space */
-.contact-us{
-    display: flex;
-    flex-direction: column;
+/* contacts space */
+.contact-us {
+  display: flex;
+  flex-direction: column;
 }
 /* location */
-.contact-us>div{
-    display: flex;
-    flex-direction: row;
+.contact-us > div {
+  display: flex;
+  flex-direction: row;
+}
+.contact-us > div > div {
+  padding: 20px 0;
+}
+.phone {
+  padding: 20px 0;
 }
 /* contact logo */
-.location>p:first-child, .phone-mail img{
-    padding-right: 10px;
-    width: 30px;
-    height: auto;
+.location > p:first-child,
+.phone-mail img {
+  padding-right: 10px;
+  width: 20px;
+  height: auto;
 }
 /* location logo over riding the size above*/
-.location img{
-    width: 20px;
-    height: auto;
+.location img {
+  width: 10px;
+  height: auto;
 }
-.about-us>p, .privacy-policy>p
-{
-padding: 10px 0;
+/* the links of about us. privacy, policy */
+.about-us > a,
+.privacy-policy > a {
+  display: block;
+  padding: 10px 0;
 }
-.social-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
+/* their active state */
+.about-us > a:active,
+.privacy-policy > a:active {
+  font-size: 16px;
+  border: solid;
 }
-.social-links>a{
-    width: 30px;
-    height: 30px;
-    margin: 0 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border: solid white 2px;
-    padding: 3px ;
-    text-align: center;
+/* ythe website social media links */
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social-links > a {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: solid white 2px;
+  padding: 1px;
+  text-align: center;
+}
+/* social media active state */
+.social-links > a:active {
+  color: hsl(198, 60%, 50%);
+  border-color: hsl(198, 60%, 50%);
 }
 /* attribuion */
 .attribution {
@@ -322,7 +364,7 @@ padding: 10px 0;
   bottom: 0;
   font-size: 11px;
   text-align: center;
-    padding: 10px;
+  padding: 10px;
 }
 .attribution a {
   color: hsl(198, 60%, 50%);
