@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <!--* fonts -->
+    <!-- raleway font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- open sans font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- frontend mentor logo on weblink -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+    <!-- FontAwesome online -->
+    <script
+      src="https://kit.fontawesome.com/dfede42a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style sheet -->
     <link rel="stylesheet" href="style.css" />
 
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -49,189 +57,206 @@
       </header>
 
       <!-- CTA1 get started -->
-      <section>
-        <!-- CTA image -->
-        <div class="gets-image">
-          <img
-            src="images/illustration-intro.png"
-            alt="files in folders illustration"
-          />
-        </div>
-        <div class="gets-discription">
-          <!-- CTA header -->
-          <h3 class="gets-header">
-            All your files in one secure location, accessible anywhere.
-          </h3>
-          <!-- CTA body -->
-          <p class="gets-body">
-            Fylo stores all your most important files in one secure location.
-            Access them wherever you need, share and collaborate with friends
-            family, and co-workers.
-          </p>
-          <!-- CTA button -->
-          <button id="gets-button">Get Started</button>
-        </div>
+      <section class="cta1">
+        <div>
+          <!-- CTA image -->
+          <div class="gets-image">
+            <img
+              src="images/illustration-intro.png"
+              alt="files in folders illustration"
+            />
+          </div>
+          <div class="gets-description">
+            <!-- CTA heading -->
+            <h1 class="gets-heading">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <!-- CTA body -->
+            <p class="gets-body">
+              Fylo stores all your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
+            </p>
+            <!-- CTA button -->
+            <button id="gets-button">Get Started</button>
+          </div>
+      </div>
+        <img class="cta1-svg" src="images/bg-curvy-mobile.svg" alt="">
       </section>
 
       <!-- services rendered by Fylo -->
       <section>
         <div class="services-container">
           <div>
-            <img
-              src="images/icon-access-anywhere.svg"
-              alt="phone infront of laptop icon"
-            />
-            <h4>Access your files, anywhere</h4>
-            <p>
-              The ability to use a smartphone, tablet, or computer to access
-              your account means your files follow you everywhere.
-            </p>
-          </div>
-          <div>
-            <img src="images/icon-security.svg" alt="security badge icon" />
-            <h4>Security you can trust</h4>
-            <p>
-              2-factor authentication and user-controlled encryption are just a
-              couple of the security features we allow to help secure your
-              files.
-            </p>
-          </div>
-          <div>
-            <img
-              src="images/icon-collaboration.svg"
-              alt="people in front of clock icon"
-            />
-            <h4>Real-time collaboration</h4>
-            <p>
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
-            </p>
-          </div>
-          <div>
-            <img src="images/icon-any-file.svg" alt="file and folder icon" />
-            <h4>Store any type of file</h4>
-            <p>
-              Whether you're sharing holidays photos or work documents, Fylo has
-              you covered allowing for all file types to be securely stored and
-              shared.
-            </p>
-          </div>
+            <div>
+              <img
+                src="images/icon-access-anywhere.svg"
+                alt="phone infront of laptop icon"
+              />
+              <h3>Access your files, anywhere</h3>
+              <p>
+                The ability to use a smartphone, tablet, or computer to access
+                your account means your files follow you everywhere.
+              </p>
+            </div>
+            <div>
+              <img src="images/icon-security.svg" alt="security badge icon" />
+              <h3>Security you can trust</h3>
+              <p>
+                2-factor authentication and user-controlled encryption are just a
+                couple of the security features we allow to help secure your
+                files.
+              </p>
+            </div>
+            <div>
+              <img
+                src="images/icon-collaboration.svg"
+                alt="people in front of clock icon"
+              />
+              <h3>Real-time collaboration</h3>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments required.
+              </p>
+            </div>
+            <div>
+              <img src="images/icon-any-file.svg" alt="file and folder icon" />
+              <h3>Store any type of file</h3>
+              <p>
+                Whether you're sharing holidays photos or work documents, Fylo has
+                you covered allowing for all file types to be securely stored and
+                shared.
+              </p>
+            </div>
         </div>
       </section>
 
       <!-- CTA2 how Flyo works -->
-      <section>
+      <section class="cta2">
         <div>
-          <img
-            src="images/illustration-stay-productive.png"
-            alt="people infront of chat bubbles illustration"
-          />
-          <h4>Stay productive, wherever you are</h4>
-          <p>
-            Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.
-          </p>
-          <p>
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required.
-          </p>
-          <p>
-            See how Fylo works
-            <img src="images/icon-arrow.svg" alt="click here arrow" />
-          </p>
+        <!-- cta2 image -->
+          <div>
+            <img
+              src="images/illustration-stay-productive.png"
+              alt="people infront of chat bubbles illustration"
+            />
+          </div>
+          <!-- cta2 descripton -->
+          <div>
+            <!-- cta2 heading -->
+            <h3>Stay productive, wherever you are</h3>
+            <!-- cta2 body -->
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and colleagues
+              for live collaboration. No email attachments required.
+            </p>
+            <p class="cta2-link">
+              See how Fylo works
+              <img src="images/icon-arrow.svg" alt="click here arrow" />
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- user reviews -->
       <section>
-        <div class="user-reviews">
-          <!-- a big quotation mark before the reviews -->
-          <img
-            src="images/bg-quotes.png"
-            alt="starting quotation mark"
-            class="bg-quotes"
-          />
-          <!-- user review 1 -->
-          <div class="review-card">
-            <!-- user review body -->
-            <p class="user-review-body">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </p>
-            <!-- user review details -->
-            <div class="user-review-details">
-              <!-- user review image -->
-              <img
-                class="user-image"
-                src="images/profile-1.jpg"
-                alt="user profile"
-              />
-              <!-- user review name and position -->
-              <div class="user-name-position">
-                <!-- user name -->
-                <p class="user-name">Satish Patel</p>
-                <!-- user position -->
-                <p class="user-location">Founder & CEO, Huddle</p>
-              </div>
+        <div>
+          <div class="user-reviews">
+            <!-- a big quotation mark before the reviews -->
+            <img
+              src="images/bg-quotes.png"
+              alt="starting quotation mark"
+              class="bg-quotes"
+            />
+            <!-- user review 1 -->
+            <div class="review-card">
+              
+                <!-- user review body -->
+                <p class="user-review-body">
+                  Fylo has improved our team productivity by an order of magnitude.
+                  Since making the switch our team has become a well-oiled
+                  collaboration machine.
+                </p>
+                <!-- user review details -->
+                <div class="user-review-details">
+                  <!-- user review image -->
+                  <img
+                    class="user-image"
+                    src="images/profile-1.jpg"
+                    alt="user profile"
+                  />
+                  <!-- user review name and position -->
+                  <div class="user-name-position">
+                    <!-- user name -->
+                    <p class="user-name">Satish Patel</p>
+                    <!-- user position -->
+                    <p class="user-location">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
             </div>
-          </div>
-          <div class="review-card">
-            <!-- user review body -->
-            <p class="user-review-body">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </p>
-            <!-- user review details -->
-            <div class="user-review-details">
-              <!-- user review image -->
-              <img
-                class="user-image"
-                src="images/profile-2.jpg"
-                alt="user profile"
-              />
-              <!-- user review name and position -->
-              <div class="user-name-position">
-                <!-- user name -->
-                <p class="user-name">Bruce McKenzie</p>
-                <!-- user position -->
-                <p class="user-location">Founder & CEO, Huddle</p>
-              </div>
+            <!-- user review 2 -->
+            <div class="review-card">
+                <!-- user review body -->
+                <p class="user-review-body">
+                  Fylo has improved our team productivity by an order of magnitude.
+                  Since making the switch our team has become a well-oiled
+                  collaboration machine.
+                </p>
+                <!-- user review details -->
+                <div class="user-review-details">
+                  <!-- user review image -->
+                  <img
+                    class="user-image"
+                    src="images/profile-2.jpg"
+                    alt="user profile"
+                  />
+                  <!-- user review name and position -->
+                  <div class="user-name-position">
+                    <!-- user name -->
+                    <p class="user-name">Bruce McKenzie</p>
+                    <!-- user position -->
+                    <p class="user-location">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
             </div>
-          </div>
-          <div class="review-card">
-            <!-- user review body -->
-            <p class="user-review-body">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </p>
-            <!-- user review details -->
-            <div class="user-review-details">
-              <!-- user review image -->
-              <img
-                class="user-image"
-                src="images/profile-3.jpg"
-                alt="user profile"
-              />
-              <!-- user review name and position -->
-              <div class="user-name-position">
-                <!-- user name -->
-                <p class="user-name">Iva Boyd</p>
-                <!-- user position -->
-                <p class="user-location">Founder & CEO, Huddle</p>
-              </div>
+            <!-- user review 3 -->
+            <div class="review-card">
+                <!-- user review body -->
+                <p class="user-review-body">
+                  Fylo has improved our team productivity by an order of magnitude.
+                  Since making the switch our team has become a well-oiled
+                  collaboration machine.
+                </p>
+                <!-- user review details -->
+                <div class="user-review-details">
+                  <!-- user review image -->
+                  <img
+                    class="user-image"
+                    src="images/profile-3.jpg"
+                    alt="user profile"
+                  />
+                  <!-- user review name and position -->
+                  <div class="user-name-position">
+                    <!-- user name -->
+                    <p class="user-name">Iva Boyd</p>
+                    <!-- user position -->
+                    <p class="user-location">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- CTA3 email subscription -->
-      <section>
+      <section class="cta3">
         <div>
-          <!-- CTA header -->
-          <h3 class="email-sub-header">Get early access today</h3>
+          <!-- CTA heading -->
+          <h3 class="email-sub-heading">Get early access today</h3>
           <!-- CTA body -->
           <p class="email-sub-body">
             It only takes a minute to sign up and our free starter tier is
@@ -268,11 +293,13 @@
           <!-- location -->
           <div class="location">
             <!-- location icon -->
+            <p>
             <img
               class="icons"
               src="images/icon-location.svg"
               alt="location icon"
             />
+            </p>
             <!-- location address -->
             <p class="company-address">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -315,14 +342,11 @@
         <!-- social media links -->
         <div class="social-links">
           <!-- facebook link -->
-          <a href="#">
-          <i class="social-icon fab fa-facebook"></i></a>
+          <a href="#"> <i class="social-icon fab fa-facebook-f"></i></a>
           <!-- twitter link -->
-          <a href="#">
-          <i class="social-icon fab fa-twitter"></i></a>
+          <a href="#"> <i class="social-icon fab fa-twitter"></i></a>
           <!-- instagram link -->
-          <a href="#">
-          <i class="social-icon fab fa-instagram"></i></a>
+          <a href="#"> <i class="social-icon fab fa-instagram"></i></a>
         </div>
       </div>
       <!-- attribution -->

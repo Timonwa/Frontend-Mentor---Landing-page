@@ -1,7 +1,329 @@
-.attribution{
-    display: fixed;
-    bottom: 0;
+/*Layout:
+Mobile:375px,Desktop: 1440px
+
+Colors
+Primary
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): 
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+### Accent
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%)
+### Neutral
+- White: hsl(0, 0%, 100%)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: dashed white 1px; */
 }
-body{
-    background: hsl(218, 28%, 13%);
+section>div{
+  padding: 40px 20px;
+}
+/* body */
+body {
+  background: hsl(218, 28%, 13%);
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+/* links */
+a {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+/* flex container of everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+/* navigation bar */
+header{
+  background:  hsl(217, 28%, 15%); 
+}
+header > nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+/* website logo */
+header .logo {
+  width: 80%;
+  text-align: start;
+}
+header .logo > img {
+  width: 70px;
+  height: auto;
+  flex-grow: 30%;
+}
+/* navigation links */
+header .nav-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-links > a {
+  font-size: 12px;
+}
+/* CTA1 in header */
+.cta1 {
+  background-color: hsl(217, 28%, 15%);
+  padding: 0;
+  position: relative;
+}
+.cta1>*{
+    z-index: 1;
+}
+.cta1-svg{
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    height: 300px;
+    width: 100%;
+}
+/* cta1 and cta2 images */
+.cta1 .gets-image > img,
+.cta2 div > img {
+  width: 100%;
+  height: auto;
+}
+/* cta1 description */
+.cta1 .gets-description {
+  margin-top: 10px;
+}
+/* cta1 heading */
+.cta1 .gets-description > h1 {
+  margin: 15px 0;
+}
+/* cta1 button */
+button,
+input {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  width: 250px;
+  margin-top: 15px;
+  padding: 10px 0;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: none;
+  background-color: hsl(198, 60%, 50%);
+}
+/* cta1 active */
+button:active {
+  background-color: hsl(176, 68%, 64%);
+}
+/* services rendered */
+.cta1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.services-container div {
+  margin: 35px 0;
+}
+/* first services rendered */
+.services-container div:first-child {
+  margin: 0;
+}
+/* services rendered images */
+.services-container img {
+  padding: 35px;
+}
+/* services and cta2 rendered headings*/
+h3 {
+  padding-bottom: 12px;
+}
+/* cta2 */
+.cta2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+/* cta2 body */
+.cta2 p {
+  padding: 10px 0;
+  text-align: start;
+}
+/* cta2 link */
+.cta2-link {
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+
+/* review section */
+.user-reviews {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* review quote */
+.user-reviews > img {
+  width: 20px;
+  height: auto;
+  text-align: start;
+}
+/* user review */
+.review-card {
+  padding: 15px;
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 25px;
+}
+/* review body */
+.review-card p,
+.review-card div {
+  padding: 7px 0;
+  text-align: start;
+}
+/* review user details */
+.user-review-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* user photo */
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.user-name,
+.user-location {
+  line-height: 8px;
+}
+.user-name {
+  font-weight: 700;
+}
+
+/* cta3  */
+.cta3 {
+  padding: 40px 10px;
+}
+/* cta3 container */
+.cta3 > div {
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px;
+}
+.cta3 p {
+  padding: 10px 0;
+}
+.cta3 input {
+  background-color: white;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: gray;
+  font-weight: 100;
+}
+.cta3 input:invalid{
+    border: solid red 3px;
+}
+/* footer */
+footer{
+    background-color: hsl(216, 53%, 9%);
+    text-align: start;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* footer logo*/
+footer>div>img{
+    padding-left: 30px;
+}
+
+.footer-contents{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* border: dashed 1px white; */
+}
+.footer-contents>div{
+    padding: 20px 10px;
+}
+    /* contacts space */
+.contact-us{
+    display: flex;
+    flex-direction: column;
+}
+/* location */
+.contact-us>div{
+    display: flex;
+    flex-direction: row;
+}
+/* contact logo */
+.location>p:first-child, .phone-mail img{
+    padding-right: 10px;
+    width: 30px;
+    height: auto;
+}
+/* location logo over riding the size above*/
+.location img{
+    width: 20px;
+    height: auto;
+}
+.about-us>p, .privacy-policy>p
+{
+padding: 10px 0;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.social-links>a{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: solid white 2px;
+    padding: 3px ;
+    text-align: center;
+}
+/* attribuion */
+.attribution {
+  display: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+    padding: 10px;
+}
+.attribution a {
+  color: hsl(198, 60%, 50%);
 }
