@@ -342,8 +342,8 @@ footer > div > img {
 }
 /* social media active state */
 .social-links > a:active {
-  color: hsl(198, 60%, 50%);
-  border-color: hsl(198, 60%, 50%);
+  color: hsl(176, 68%, 64%);
+  border-color: hsl(176, 68%, 64%);
 }
 /* attribuion */
 .attribution {
