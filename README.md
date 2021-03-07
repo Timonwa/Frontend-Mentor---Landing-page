@@ -2,6 +2,6 @@
 
 ![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow one to improve their skills in a real-life workflow.
 
-The task is to build out the project to the designs given the mockups of the desktop and mobil version, the images used and a style guide.
+The task is to replicate the given project from the mockups of the desktop and mobile version, using the images and style guide provided.
