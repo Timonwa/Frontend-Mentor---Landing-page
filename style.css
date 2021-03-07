@@ -150,7 +150,9 @@ h3 {
 /* cta2 link */
 .cta2-link {
   color: hsl(176, 68%, 64%);
-  text-decoration: underline;
+  border-bottom: solid 1px hsl(176,68%,64%);
+  align-self: start;
+  height: 30px;
 }
 
 /* review section */
